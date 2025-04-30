@@ -14,6 +14,7 @@ app.use(json());
 */
 // Izinkan semua origin (hanya untuk pengujian)
 app.use(cors());
+app.use(json());
 
 // Log semua permintaan
 app.use((req, res, next) => {
