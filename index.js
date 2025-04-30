@@ -7,9 +7,13 @@ import transactionRoutes from './routes/transactionRoutes.js';
 const app = express();
 const port = 3000;
 
+/*
 // Middleware
 app.use(cors({ origin: 'https://backend-banking.vercel.app' }));
 app.use(json());
+*/
+// Izinkan semua origin (hanya untuk pengujian)
+app.use(cors());
 
 // Log semua permintaan
 app.use((req, res, next) => {
