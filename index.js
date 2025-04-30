@@ -8,7 +8,7 @@ const app = express();
 const port = 3000;
 
 // Middleware
-app.use(cors({ origin: '' }));
+app.use(cors({ origin: 'https://backend-banking.vercel.app' }));
 app.use(json());
 
 // Log semua permintaan
